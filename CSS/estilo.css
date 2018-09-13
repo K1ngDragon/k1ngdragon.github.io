@@ -1,0 +1,241 @@
+/*ELIMINA MARGENES EL (*) ES EL SELECTOR UNIVERSAL */
+
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*DA COLOR DE FONTO Y DE TEXTO*/
+body {
+    background: #E67E22;
+    background-image: url("../IMAGES/wallpaper.png");
+    color: #FFF;
+    font-family: 'Abel', sans-serif;
+}
+
+/*DA FORMATO AL CONTENDEDOR <DIV>*/
+#contenedor {
+    width: 960px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+header {
+  height: 150px;
+  background: #641E16;
+  background-size: 900px;
+  background-position: center;
+  margin-bottom: 5px;
+ }
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    text-align: left;
+    padding-top: 33px;
+    margin-left: 50px;
+    color: #FFF;
+    text-shadow: 5px 5px 5px #000;
+}
+
+header h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 50px;
+    color: #FFF;
+  /*  line-height: 150px; */
+    text-shadow: 2px 2px 2px #000;
+}
+
+header #cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+header #cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+header #cf img.top:hover {
+  opacity:0;
+}
+
+
+
+/* ----- CONSULTAR -----
+#logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+*/
+/*BARRA DE NAVEGACION ????*/
+
+nav {
+    height: 50px;
+    padding-bottom: 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 19px 19px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: #111;
+}
+
+
+/* FORMATO TRIPTICO - GASTRONOMICA - CULTURA - TURISMO */
+
+
+#noticias {
+    width: 960px;
+    height: 335px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000; 
+}
+
+/* GASTRONOMIA */
+#noticias #noticia1 {
+     background-image: url("https://images.clarin.com/2017/04/30/rJhIC1N1-_930x525.jpg");
+    background-position: center;
+    background-size: 800px;
+    width: 314px;
+    height: 335px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*CULTURA */
+
+#noticias #noticia2 {
+    background-image: url("https://i.pinimg.com/originals/e9/50/f5/e950f5818818c7b21585376d3f5d3e1f.jpg");
+    background-position: center;
+    background-size: 700px;
+    width: 314px;
+    height: 335px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*TURISMO*/
+
+#noticias #noticia3 {
+    background-image: url("https://images.clarin.com/2017/12/20/H1Ct7V_fM_1200x0.jpg");
+    background-position: center;
+    background-size: 600px;    
+    width: 314px;
+    height: 335px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#noticias i {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+#contenido {
+    width: 700px;
+    height: 800px;
+    float: left;
+    background: #21618C;
+    margin-bottom: 5px;
+}
+
+#contenido h2 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 500px;
+}
+
+p {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#contenido h3 {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*barra lateral links de interes*/
+aside {
+    width: 250px;
+    height: 500px;
+    background: #5c940d;
+    float: right;
+}
+
+aside h2 {
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+aside ul {
+    color: #FFF;
+    list-style-type: none;
+    margin: 10px;
+    overflow: hidden;
+ }   
+
+aside a:link {text-decoration:none; color: #FFF;} /* Link no visitado*/
+aside a:visited {text-decoration:none; color:#FFF;} /*Link visitado*/
+aside a:active {text-decoration:none; color:#FFF; } /*Link activo*/
+aside a:hover {text-decoration:none; color:#FFF; text-shadow: 2px 2px 2px #000;  font-weight: bold;} /*Mause sobre el link*/
+
+  /*pie de pagina*/
+
+footer {
+    background: #7B241C;
+    /*borra todas las posiciones anteriores*/
+    clear: both;
+}
+
+footer h2 {
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+
+}

@@ -1,0 +1,79 @@
+/*ELIMINA MARGENES EL (*) ES EL SELECTOR UNIVERSAL */
+
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #1B2631;
+}
+
+#contenedor {
+height: 1050px;
+width: 780px;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*compartan caracteristicas banner */
+header, #banner {
+    background: #FFF;
+    width: 780px;
+    height: 100px;
+}
+
+#banner {
+    background: #666;
+    height: 300px;
+}
+
+#noticias {
+    background: #FFF;
+    height: 220px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#tienda {
+    background: #777;
+    height: 170px;
+}
+
+#marcas {
+    background: #777;
+    height: 170px;
+}
+
+footer {
+    background: #333;
+    width: 780px;
+    height: 60px;
+}
+
+#noticias #noticia1 {
+    background: #F1C40F;
+    width: 250px;
+    height: 215px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#noticias #noticia2 {
+    background: #148F77;
+    width: 250px;
+    height: 215px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#noticias #noticia3 {
+    background: #76448A;
+    width: 250px;
+    height: 215px;
+    display: inline-block;
+    vertical-align: top;
+}
