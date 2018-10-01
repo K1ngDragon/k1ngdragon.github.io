@@ -8,26 +8,28 @@
 
 /*DA COLOR DE FONTO Y DE TEXTO*/
 body {
-    background: #E67E22;
-    background-image: url("../IMAGES/wallpaper.png");
+    background: #DF6127;
+    background-image: url("../IMAGES/wallpaper2.png");
     color: #FFF;
     font-family: 'Abel', sans-serif;
 }
 
 /*DA FORMATO AL CONTENDEDOR <DIV>*/
 #contenedor {
-    width: 960px;
+    width: 1000px;
+    height: auto;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    background: #000;
 }
 
 
 
 header {
   height: 150px;
-  background: #641E16;
-  background-size: 900px;
+  background-image: url("../IMAGES/elnevado.png"); 
+  background-size: 1000px;
   background-position: center;
   margin-bottom: 5px;
  }
@@ -39,7 +41,8 @@ header h1 {
     padding-top: 33px;
     margin-left: 50px;
     color: #FFF;
-    text-shadow: 5px 5px 5px #000;
+/* RELIEVE EN TEXTO CON TEXT - SHADOW !!!! :D   */;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 header h2 {
@@ -49,7 +52,7 @@ header h2 {
     margin-left: 50px;
     color: #FFF;
   /*  line-height: 150px; */
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 header #cf {
@@ -73,15 +76,7 @@ header #cf img.top:hover {
 }
 
 
-
-/* ----- CONSULTAR -----
-#logo {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-}
-*/
-/*BARRA DE NAVEGACION ????*/
+/* ------------------------ MENU NAVEGACION ---------------*/
 
 nav {
     height: 50px;
@@ -107,13 +102,11 @@ nav li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* COLOR DE FONDO PARA HOVER */
 nav li a:hover {
     background-color: #111;
 }
 
-
-/* FORMATO TRIPTICO - GASTRONOMICA - CULTURA - TURISMO */
 
 
 #noticias {
@@ -125,83 +118,165 @@ nav li a:hover {
     text-shadow: 2px 2px 2px #000; 
 }
 
-/* GASTRONOMIA */
-#noticias #noticia1 {
-     background-image: url("https://images.clarin.com/2017/04/30/rJhIC1N1-_930x525.jpg");
-    background-position: center;
-    background-size: 800px;
-    width: 314px;
-    height: 335px;
-    text-align: left;
-    display: inline-block;
-    vertical-align: top;
+/*------------ NOTICIAS EN TRES COLUMNAS ---------------- */
+/*------- -> COVER <- PARA AJUSTAR A GRID ----------------*/
+
+.container {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 5px;
 }
 
-/*CULTURA */
-
-#noticias #noticia2 {
-    background-image: url("https://i.pinimg.com/originals/e9/50/f5/e950f5818818c7b21585376d3f5d3e1f.jpg");
-    background-position: center;
-    background-size: 700px;
-    width: 314px;
-    height: 335px;
-    text-align: left;
-    display: inline-block;
-    vertical-align: top;
-}
-
-/*TURISMO*/
-
-#noticias #noticia3 {
-    background-image: url("https://images.clarin.com/2017/12/20/H1Ct7V_fM_1200x0.jpg");
-    background-position: center;
-    background-size: 600px;    
-    width: 314px;
-    height: 335px;
-    text-align: left;
-    display: inline-block;
-    vertical-align: top;
-}
-
-#noticias i {
-    margin-left: 10px;
-    margin-top: 10px;
+.box2 {
+            background: url(http://elportalderecreo.com.ar/images/logos/politicos/poncho16.gif);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            padding: 5px;
+            height: 350px;
 }
 
 
-#contenido {
-    width: 700px;
-    height: 800px;
-    float: left;
-    background: #21618C;
-    margin-bottom: 5px;
+.box1 {
+            background: url(http://catamarcasintesis.com.ar/wp-content/uploads/2016/06/promo-porque-Catamarca-me-crece-en-la-sangre.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            padding: 5px;
+           
 }
 
-#contenido h2 {
-    font-size: 30px;
+.box3 {
+            background: url(https://i2.wp.com/catamarcavirtual.com/wp-content/uploads/2018/07/RODOCROSITA-CONCURSO.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            padding: 5px;
+
+}
+
+/* -------------------- CONTENIDO  ----------------- */
+
+.contenido {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-gap: 5px;
+}
+
+.box-a {
+            background: #193441;
+            color: #fff;
+            text-align: justify;
+            padding: 5px;
+}
+
+.imgbody {
+    display: block;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.frame {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+/* --------------- AQUI VA CSS PARA RECETAS ------ PREGUNTAR SI CONVIENE UNA CSS POR HTML ----*/
+
+
+.comidas {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 5px;
+}
+
+.box-b {
+            background: #1A7364;
+            color: #fff;
+            text-align: justify;
+            padding: 5px;
+}
+
+/*-------AQUÍ INICIA CCS RECETAS gastronomia.htm -----*/
+
+#recetas {
+    background: #22556e   ;/*#21618C;*/
     text-align: center;
-    line-height: 500px;
 }
 
-p {
-    text-align: justify;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+#recetas hr {
+    border-style: dashed;
+    border-width: 1px;
+    width: 300px;
 }
 
-#contenido h3 {
-    font-size: 20px;
-    text-align: left;
-    margin-top: 10px;
-    margin-left: 10px;
+#locro, #humita, #mote {
+    background:#22556e;
+   
+ 
 }
 
-/*barra lateral links de interes*/
+/*----------- TEXTO VERTICUAL ---------*/
+#locro h2, #humita h2, #mote h2{
+    width:300px;
+    height:30px;
+    background:#4799b7;
+    color:#fff;
+    text-align:center;
+    font-family: Arial;
+    font-size:20px;
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+    position:relative;
+    left:-135px;
+    top:160px;
+}
+
+/*---------- TEXTO DE RECETA ------------------*/
+
+#locro p, #humita p, #mote p{
+    
+    margin-left: 40px;
+    font-family: Arial;
+    color:#fff;
+    font-size:15px;
+    text-align:justify;
+}
+
+
+/*--------------- IMAGEN DE RESETA -------------*/
+
+#locro img, #humita img, #mote img {
+   
+    float:right;
+    margin-top: 0px;
+}
+
+
+/*-------------- LINKS DE INTERES ---------------*/
 aside {
     width: 250px;
-    height: 500px;
+    height: 270px;
     background: #5c940d;
     float: right;
 }
@@ -212,25 +287,120 @@ aside h2 {
     text-align: center;
 }
 
-aside ul {
+.contenido ul {
     color: #FFF;
     list-style-type: none;
     margin: 10px;
     overflow: hidden;
  }   
 
-aside a:link {text-decoration:none; color: #FFF;} /* Link no visitado*/
-aside a:visited {text-decoration:none; color:#FFF;} /*Link visitado*/
-aside a:active {text-decoration:none; color:#FFF; } /*Link activo*/
-aside a:hover {text-decoration:none; color:#FFF; text-shadow: 2px 2px 2px #000;  font-weight: bold;} /*Mause sobre el link*/
+.contenido a:link {text-decoration:none; color: #FFF;} /* Link no visitado*/
+.contenido a:visited {text-decoration:none; color:#FFF;} /*Link visitado*/
+.contenido a:active {text-decoration:none; color:#FFF; } /*Link activo*/
+.contenido a:hover {text-decoration:none; color:#FFF; text-shadow: 2px 2px 2px #000;  font-weight: bold;} /*mouse sobre el link*/
 
-  /*pie de pagina*/
+
+
+/* --------------- ESPACIO PARA LINKS DE INTERCAMBIO ----------------*/
+
+#links {
+   width: 100%;
+   height: 200px;
+}
+
+
+#banner {
+    display: block;
+    background: url("http://i.picasion.com/pic88/01f78c12287f826d7f724b28f694576d.gif");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+    padding-top: 5px;
+}
+
+#banner2 {
+    background: url("http://www.viveelritmodelpacifico.co/wp-content/themes/valle/img/logo.gif");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+/*------------------- FORMULARIO -----------*/
+
+#mc_embed_signup {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#mce-EMAIL {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.emailimage {
+    display: block;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+}
+/*label {
+    color: #FFF;
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+ 
+.principal {
+    display:block;
+    margin:0 auto;
+    width:510px;
+    color: #000;
+    font-family:'Old Standard TT', serif;
+}
+ 
+form {
+    margin:0 auto;
+    width:400px;
+    grid-column-start: 1;
+    grid-column-end: 3; 
+
+}
+ 
+input, textarea {
+    font-family:'Old Standard TT', serif;
+    width: 380px;
+    height: 27px;
+    background: #000;
+    border: 2px solid #f6f6f6;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+ 
+textarea {
+    height:150px;
+}
+ 
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}*/
+
+
+  /*-------------- PIÉ DE PÁGINA ----------------*/
 
 footer {
     background: #7B241C;
-    /*borra todas las posiciones anteriores*/
-    clear: both;
-}
+ }
 
 footer h2 {
     font-size: 15px;
