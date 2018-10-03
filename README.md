@@ -9,4 +9,11 @@
 - Leyendas
 - Contacto
 
-El sitio también esta alojado en [site44.com](https://dpsa.site44.com/).
+:earth_americas: El sitio también esta alojado en [site44.com](https://dpsa.site44.com/).
+
+´´´´´´´´´´´´
+vi /etc/pf.conf
+q!
+´´´´´´´´´´´´
+
+
