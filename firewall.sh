@@ -1,9 +1,9 @@
 fwcmd="/sbin/ipfw"
 internet="em0"
-local="el0"
+local="le0"
 #ipinet="1.1.1.1"
 iplocal="10.10.0.1"
-netlocal="10.10..0/24"
+netlocal="10.10.0.0/24"
 
 ${fwcmd} -f flush
 ${fwcmd} add check-state
@@ -18,7 +18,7 @@ ${fwcmd} add deny ip from 127.0.0.0/8 to any
 ${fwcmd} add allow ip from ${netlocal} to any via ${local}
 ${fwcmd} add allow ip from any to ${netlocal} via ${local}
 
-${fwcmd} nat 1 config ip ${ipinet} reset same_ports deny_in redirect_port tcp ${ipinet}:3300 3300 redirect_port tcp 10.1:3300 3389
+${fwcmd} nat 1 config ip ${ipinet} reset same_ports deny_in redirect_port tcp ${ipinet}:3300 3300 redirect_port tcp 10.10:3300 3389
 
 ${fwcmd} add nat 1 tcp from any to any via ${internet}
 ${fwcmd} add nat 1 udp from any to any via ${internet}
