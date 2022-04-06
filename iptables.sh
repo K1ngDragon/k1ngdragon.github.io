@@ -34,16 +34,16 @@ iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 
 # ssh solo internamente y desde este rango de ip's
-iptables -A INPUT -p tcp -s 10.10.x.x/24 -i $intranet --dport 7659 -j ACCEPT
+iptables -A INPUT -p tcp -s 10.10.0.0/24 -i $intranet --dport 7659 -j ACCEPT
 
 # monitoreo por ejemplo si tienen zabbix o algun otro servicio snmp
-iptables -A INPUT -p tcp -s 10.10.x.x/24 -i $intranet --dport 10050 -j ACCEPT
+iptables -A INPUT -p tcp -s 10.10.0.0/24 -i $intranet --dport 10050 -j ACCEPT
 
 # icmp, ping bueno es decisión tuya
-iptables -A INPUT -p icmp -s 10.10.x.x/24 -i $intranet -j ACCEPT
+iptables -A INPUT -p icmp -s 10.10.0.0/24 -i $intranet -j ACCEPT
 
 #mysql con postgres es el puerto 5432
-iptables -A INPUT -p tcp -s 10.10.x.x --sport 3306 -i $intranet -j ACCEPT
+iptables -A INPUT -p tcp -s 10.10.0.0 --sport 3306 -i $intranet -j ACCEPT
 
 #sendmail bueeeh si quieres enviar algún correo
 #iptables -A OUTPUT -p tcp --dport 25 -j ACCEPT
